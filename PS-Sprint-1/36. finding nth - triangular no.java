@@ -3,13 +3,12 @@ public class Main
 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter a number : ");
 		int n = sc.nextInt();
-		int nth_no = 0;
 		
-		for(int i = 1; i <= n; i ++){
-		    nth_no += i;
-		}
+		int res = (n*(n + 1))/2;
 		
-		System.out.println("Nth Triangular NO : " + nth_no);
+		System.out.println("The sum of n-th traingular no : " + res);
 	}
 }
