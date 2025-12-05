@@ -20,7 +20,7 @@ public class Main
 		int n = sc.nextInt();
 		
 		int arr[][] = new int[n][n];
-		
+		int s = 1;
 		for(int i = 0; i < n; i ++){
 		    for(int j = 0; j < n; j ++){
 		        arr[i][j] = fib(s ++);
