@@ -19,16 +19,14 @@ public class Main
 		System.out.print("Enter size : ");
 		int n = sc.nextInt();
 		
-		int size = n * n;
+		int arr[][] = new int[n][n];
 		
-		int arr[] = new int[size];
-		
-		for(int i = 0; i < size; i ++){
-		    arr[i] = fib(i + 1);
+		for(int i = 0; i < n; i ++){
+		    for(int j = 0; j < n; j ++){
+		        arr[i][j] = fib(s ++);
+		        System.out.print(arr[i][j] + " ");
+		    }
+		    System.out.println();
 		}
-		
-		System.out.println(Arrays.toString(arr));
-		
-		
 	}
 }
